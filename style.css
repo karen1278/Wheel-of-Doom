@@ -1,0 +1,70 @@
+.participantes, .ruleta{
+    padding: 50px;
+}
+.ruleta{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.hueco{
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.liContainer {
+    background-color: white;
+    width: 100%;
+    color: darkslategray;
+    margin-top: 20px;
+}
+p{
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+}
+
+li {
+  max-width: 200px;
+  height: 40px;
+  list-style: none;
+  background-color: #8CBF40;
+  border-radius: 10px;
+  margin-top: 5px;
+  display: flex;
+}
+.btnDelete {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    color: #2BA447;
+    font-weight: bold;
+    font-size: 24px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+}
+
+.btnDelete:hover {
+  cursor: pointer;
+  color: #FBE23A;
+}
+
+.btnadd {
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  font-family: fantasy;
+  background-color: #FFBD67;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btnadd:hover {
+  cursor: pointer;
+  background-color: #DFA21E;
+}
+
