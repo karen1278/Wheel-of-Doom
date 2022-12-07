@@ -99,6 +99,21 @@ ul{
   padding: 0;
 }
 
+.btn-start{
+    width: 6rem;
+    height: 5rem;
+    background: none;
+    border-style: none;
+    position: relative;
+    top: 0.8rem;
+    left: 2rem;
+}
+
+.btn-start img.btn-start{
+  width: 100%;
+  height: auto;
+}
+
 @keyframes slide-left{0%{transform:translateX(-100px)}100%{transform:translateX(0)}}
 
 .btnDelete {
@@ -292,6 +307,10 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .btn-start{
+    left: 0;
   }
 
   .ruleta{
