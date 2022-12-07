@@ -2,6 +2,7 @@
  const añadir = document.querySelector(".btnadd")
  const ul = document.querySelector("ul")
  let elegido = document.querySelector("figcaption")
+ let datos =[]
 
  añadir.addEventListener("click", (e) => {
      e.preventDefault();
@@ -14,8 +15,13 @@
          li.appendChild(addDeleteBtn())
          ul.appendChild(li)
          entrada.value=""
+         datos.push(p.textContent);
      } 
  });
+
+ function seleccionarDatosAzar(datos){
+    return datos[Math.floor(Math.random() * datos.length)]
+ }
 
  const addDeleteBtn = () =>{
      const deleteBtn = document.createElement("button")
